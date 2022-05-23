@@ -1,0 +1,354 @@
+/* Responsive desktop */
+@media screen and (min-width: 992px) {
+    .bloc_page,
+    footer.footer .container {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    nav.nav-bar .navigation .select-1:hover,
+    nav.nav-bar .navigation .select-2:hover {
+        color: #0065fc;
+        border-top: 2px #0065fc solid;
+    }
+
+    #text-search-bar .search-desktop {
+        display: inline;
+    }
+
+    #text-search-bar .search-phone {
+        display: none;
+    }
+
+    section.filters .filters-list .all-filters .filter1,
+    section.filters .filters-list .all-filters .filter2,
+    section.filters .filters-list .all-filters .filter3,
+    section.filters .filters-list .all-filters .filter4 {
+        transition: all 0.3s ease-out;
+    }
+
+    section.filters .filters-list .all-filters .filter1:hover,
+    section.filters .filters-list .all-filters .filter2:hover,
+    section.filters .filters-list .all-filters .filter3:hover,
+    section.filters .filters-list .all-filters .filter4:hover {
+        transform: scale(1.1);
+    }
+
+    section.search-results .city-results .container .cards .card-1,
+    section.search-results .city-results .container .cards .card-2,
+    section.search-results .city-results .container .cards .card-3,
+    section.search-results .city-results .container .cards .card-4,
+    section.search-results .city-results .container .cards .card-5,
+    section.search-results .city-results .container .cards .card-6,
+    section.search-results .popular .container .cards .card-1,
+    section.search-results .popular .container .cards .card-2,
+    section.search-results .popular .container .cards .card-3 {
+        transition: all 0.3s ease-out;
+    }
+
+    section.search-results .city-results .container .cards .card-1:hover,
+    section.search-results .city-results .container .cards .card-2:hover,
+    section.search-results .city-results .container .cards .card-3:hover,
+    section.search-results .city-results .container .cards .card-4:hover,
+    section.search-results .city-results .container .cards .card-5:hover,
+    section.search-results .city-results .container .cards .card-6:hover,
+    section.search-results .popular .container .cards .card-1:hover,
+    section.search-results .popular .container .cards .card-2:hover,
+    section.search-results .popular .container .cards .card-3:hover {
+        transform: scale(1.1);
+    }
+
+    section.activity .container .cards .sec1 .bigger .card-1:hover,
+    section.activity .container .cards .sec1 .smaller .card-2:hover,
+    section.activity .container .cards .sec1 .smaller .card-3:hover,
+    section.activity .container .cards .sec2 .bigger .card-1:hover,
+    section.activity .container .cards .sec2 .smaller .card-2:hover,
+    section.activity .container .cards .sec2 .smaller .card-3:hover {
+        transform: scale(1.05);
+    }
+
+    section.activity .container .cards .sec1 .bigger .card-1:hover .illustration .desk-img-sec1-card1,
+    section.activity .container .cards .sec1 .smaller .card-2:hover .illustration .desk-img-sec1-card2,
+    section.activity .container .cards .sec1 .smaller .card-3:hover .illustration .desk-img-sec1-card3,
+    section.activity .container .cards .sec2 .bigger .card-1:hover .illustration .desk-img-sec2-card1,
+    section.activity .container .cards .sec2 .smaller .card-2:hover .illustration .desk-img-sec2-card2,
+    section.activity .container .cards .sec2 .smaller .card-3:hover .illustration .desk-img-sec2-card3 {
+        filter: brightness(60%);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+    section.search-results .container .title p {
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+
+    section.activity .container .cards .sec1 .bigger .card-1 .title-card h1,
+    section.activity .container .cards .sec1 .smaller .card-2 .title-card h1,
+    section.activity .container .cards .sec1 .smaller .card-3 .title-card h1,
+    section.activity .container .cards .sec2 .bigger .card-1 .title-card h1,
+    section.activity .container .cards .sec2 .smaller .card-2 .title-card h1,
+    section.activity .container .cards .sec2 .smaller .card-3 .title-card h1 {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1444px) {
+    section.search-results .popular .container .cards .card-1 .description .text .title p,
+    section.search-results .popular .container .cards .card-2 .description .text .title p,
+    section.search-results .popular .container .cards .card-3 .description .text .title p,
+    section.search-results .city-results .container .cards .card-1 .description .text .title p,
+    section.search-results .city-results .container .cards .card-2 .description .text .title p,
+    section.search-results .city-results .container .cards .card-3 .description .text .title p,
+    section.search-results .city-results .container .cards .card-4 .description .text .title p,
+    section.search-results .city-results .container .cards .card-5 .description .text .title p,
+    section.search-results .city-results .container .cards .card-6 .description .text .title p {
+        font-size: 0.8em;
+    }
+
+    section.search-results .popular .container .cards .card-1 .description .text .price p,
+    section.search-results .popular .container .cards .card-2 .description .text .price p,
+    section.search-results .popular .container .cards .card-3 .description .text .price p,
+    section.search-results .city-results .container .cards .card-1 .description .text .price p,
+    section.search-results .city-results .container .cards .card-2 .description .text .price p,
+    section.search-results .city-results .container .cards .card-3 .description .text .price p,
+    section.search-results .city-results .container .cards .card-4 .description .text .price p,
+    section.search-results .city-results .container .cards .card-5 .description .text .price p,
+    section.search-results .city-results .container .cards .card-6 .description .text .price p {
+        font-size: 0.7em;
+    }
+
+    section.search-results .popular .container .cards .card-1 .description,
+    section.search-results .popular .container .cards .card-2 .description,
+    section.search-results .popular .container .cards .card-3 .description {
+        padding: 7% 5%;
+    }
+
+    section.search-results .city-results .container .cards .blue,
+    section.search-results .city-results .container .cards .grey,
+    section.search-results .popular .container .cards .blue,
+    section.search-results .popular .container .cards .grey {
+        font-size: small;
+    }
+
+    section.activity .container .cards .sec1 .bigger .card-1 .title-card,
+    section.activity .container .cards .sec1 .smaller .card-2 .title-card,
+    section.activity .container .cards .sec1 .smaller .card-3 .title-card,
+    section.activity .container .cards .sec2 .bigger .card-1 .title-card,
+    section.activity .container .cards .sec2 .smaller .card-2 .title-card,
+    section.activity .container .cards .sec2 .smaller .card-3 .title-card {
+        padding: 0 3%;
+    }
+}
+/* Responsive desktop */
+
+/* ---------------------------------------------- */
+
+/* Responsive tablettes */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    nav.nav-bar .navigation .select-1:active,
+    nav.nav-bar .navigation .select-2:active {
+        color: #0065fc;
+        border-top: 2px #0065fc solid;
+    }
+
+    header .headtitle {
+        margin: 0;
+        text-align: center;
+    }
+
+    section.filters {
+        margin: 0 18px;
+    }
+
+    #text-search-bar {
+        justify-content: center;
+    }
+
+    #text-search-bar .search-desktop {
+        display: inline;
+    }
+
+    #text-search-bar .search-phone {
+        display: none;
+    }
+
+    section.filters .filters-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.filters .filters-list .all-filters .filter1,
+    section.filters .filters-list .all-filters .filter2,
+    section.filters .filters-list .all-filters .filter3 {
+        margin-right: 12px;
+    }
+
+    section.filters .filters-list .title {
+        margin-bottom: 16px;
+    }
+
+    section.filters .filters-list .all-filters p {
+        font-size: 0.76em;
+        margin: 0 10px 0 5px;
+    }
+
+    section.filters .information-text {
+        justify-content: center;
+    }
+
+    section.search-results {
+        flex-direction: column;
+        height: 1019px;
+    }
+
+    section.search-results .popular {
+        width: 100%;
+    }
+
+    section.search-results .popular .container .cards {
+        flex-direction: row;
+        height: auto;
+        padding: 25px 0 0 0;
+    }
+
+    section.search-results .popular .container .cards .card-1,
+    section.search-results .popular .container .cards .card-2,
+    section.search-results .popular .container .cards .card-3 {
+        width: 30%;
+        height: 200px;
+    }
+
+    section.search-results .popular .container .cards .card-1,
+    section.search-results .popular .container .cards .card-2,
+    section.search-results .popular .container .cards .card-3 {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    section.search-results .popular .container .cards .card-1 .illustration,
+    section.search-results .popular .container .cards .card-2 .illustration,
+    section.search-results .popular .container .cards .card-3 .illustration {
+        width: 100%;
+    }
+
+    section.search-results .popular .container .cards .card-1 .illustration img.desk-img-card1,
+    section.search-results .popular .container .cards .card-2 .illustration img.desk-img-card2,
+    section.search-results .popular .container .cards .card-3 .illustration img.desk-img-card3 {
+        height: 115px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    section.search-results .popular .container .cards .card-1 .description,
+    section.search-results .popular .container .cards .card-2 .description,
+    section.search-results .popular .container .cards .card-3 .description {
+        padding: 3% 5%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    section.search-results .popular .container .cards .card-1 .description .text .title p,
+    section.search-results .popular .container .cards .card-2 .description .text .title p,
+    section.search-results .popular .container .cards .card-3 .description .text .title p {
+        padding: 0;
+    }
+
+    section.search-results .popular .container .cards .card-1 .description .text .price p,
+    section.search-results .popular .container .cards .card-2 .description .text .price p,
+    section.search-results .popular .container .cards .card-3 .description .text .price p {
+        padding: 2% 0 0 0;
+    }
+
+    section.search-results .city-results {
+        width: 100%;
+    }
+
+    section.search-results .popular .container .cards .card-1 .description .text .title p,
+    section.search-results .popular .container .cards .card-2 .description .text .title p,
+    section.search-results .popular .container .cards .card-3 .description .text .title p,
+    section.search-results .city-results .container .cards .card-1 .description .text .title p,
+    section.search-results .city-results .container .cards .card-2 .description .text .title p,
+    section.search-results .city-results .container .cards .card-3 .description .text .title p,
+    section.search-results .city-results .container .cards .card-4 .description .text .title p,
+    section.search-results .city-results .container .cards .card-5 .description .text .title p,
+    section.search-results .city-results .container .cards .card-6 .description .text .title p {
+        font-size: 0.8em;
+    }
+
+    section.search-results .popular .container .cards .card-1 .description .text .price p,
+    section.search-results .popular .container .cards .card-2 .description .text .price p,
+    section.search-results .popular .container .cards .card-3 .description .text .price p,
+    section.search-results .city-results .container .cards .card-1 .description .text .price p,
+    section.search-results .city-results .container .cards .card-2 .description .text .price p,
+    section.search-results .city-results .container .cards .card-3 .description .text .price p,
+    section.search-results .city-results .container .cards .card-4 .description .text .price p,
+    section.search-results .city-results .container .cards .card-5 .description .text .price p,
+    section.search-results .city-results .container .cards .card-6 .description .text .price p {
+        font-size: 0.7em;
+    }
+
+    section.search-results .city-results .container .cards .blue,
+    section.search-results .city-results .container .cards .grey,
+    section.search-results .popular .container .cards .blue,
+    section.search-results .popular .container .cards .grey {
+        font-size: small;
+    }
+
+    section.activity {
+        height: 1089px;
+    }
+
+    section.activity .container .cards {
+        height: 934px;
+        flex-direction: column;
+    }
+
+    section.activity .container .cards .sec1,
+    section.activity .container .cards .sec2 {
+        height: 445px;
+        width: 100%;
+    }
+
+    footer.footer .container .col1,
+    footer.footer .container .col2,
+    footer.footer .container .col3 {
+        width: auto;
+    }
+
+    footer.footer .container .col3 .title,
+    footer.footer .container .col3 .content .row {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+/* Responsive tablettes */
+
+/* ---------------------------------------------- */
+
+/* Responsive mobiles */
+@media screen and (max-width: 767px) {
+    * {
+        display: none;
+    }
+}
+/* Responsive mobiles */
+
+/* section.activity .container .cards .desk-img-card1 {
+    transition: 0.3s ease-in-out;
+}
+
+section.activity .container .cards .description {
+    transition: 0.3s ease-in-out;
+}
+
+section.activity .container .cards .sec1 .bigger .card-1:hover .desk-img-card1 {
+    filter: brightness(60%);
+}
+
+section.activity .container .cards .sec1 .bigger .card-1:hover .description {
+    height: 30%;
+} */

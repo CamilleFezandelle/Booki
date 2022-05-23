@@ -1,12 +1,684 @@
-*,
-::before,
-::after {
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-ol,
-ul {
-    list-style: none;
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bloc_page {
+    /* à mettre dans @media screen desktop */
+    height: 100%;
+}
+
+.black {
+    color: #000000;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.blue {
+    color: #0065fc;
+}
+
+.grey {
+    color: #d9d9d9;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.stars .star-icon {
+    height: 14px;
+    width: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+/* --------Head-------- */
+header {
+    height: 200px;
+    margin: 0 18px;
+}
+
+/* navbar */
+nav.nav-bar {
+    height: 44%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.nav-bar .logo {
+    margin-left: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav.nav-bar .logo a img {
+    width: 93px;
+}
+
+nav.nav-bar .navigation {
+    width: 330px;
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.nav-bar .navigation .select-1,
+nav.nav-bar .navigation .select-2 {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+}
+
+nav.nav-bar .navigation .select-1 span,
+nav.nav-bar .navigation .select-2 span {
+    transition: all 0.3s ease;
+}
+
+/* title */
+header .headtitle {
+    height: 56%;
+    margin: 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+header .headtitle p {
+    height: 32%;
+}
+
+header .headtitle .title {
+    font-weight: 700;
+    font-size: 1.375em;
+}
+
+header .headtitle .subtitle {
+    font-size: 1em;
+}
+
+/* --------Head-------- */
+
+/* --------Filters-------- */
+
+section.filters {
+    margin: 0 50px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Search bar */
+#text-search-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#text-search-bar .localisation {
+    background-color: #f2f2f2;
+    border-radius: 16px 0 0 16px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-search-bar input {
+    height: 50px;
+    width: 234px;
+    border-radius: 0;
+    border: 1px #f2f2f2 solid;
+    border-right: none;
+    border-left: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 0 18px;
+}
+
+#text-search-bar input::placeholder {
+    font-weight: 700;
+    color: black;
+    font-size: 1.1em;
+    opacity: 1;
+    padding-left: 1px;
+}
+
+#text-search-bar input:focus {
+    outline: none;
+}
+
+#text-search-bar .search-desktop {
+    height: 50px;
+    width: 134px;
+    cursor: pointer;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 0 16px 16px 0;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 0 2px #363636;
+}
+
+#text-search-bar .search-phone {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 0 16px 16px 0;
+}
+
+/* filters list */
+
+section.filters .filters-list {
+    display: flex;
+}
+
+section.filters .filters-list .title {
+    width: 7%;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+section.filters .filters-list .all-filters {
+    display: flex;
+    flex-direction: row;
+}
+
+section.filters .filters-list .all-filters .filter1,
+section.filters .filters-list .all-filters .filter2,
+section.filters .filters-list .all-filters .filter3 {
+    margin-right: 24px;
+}
+
+section.filters .filters-list .all-filters .filter1,
+section.filters .filters-list .all-filters .filter2,
+section.filters .filters-list .all-filters .filter3,
+section.filters .filters-list .all-filters .filter4 {
+    background-color: #ffffff;
+    outline: 2px #d9d9d9 solid;
+    outline-offset: -2px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+section.filters .filters-list .all-filters .container {
+    background-color: #deebff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+}
+
+section.filters .filters-list .all-filters p {
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0 18px 0 12px;
+}
+
+/* Information text */
+
+section.filters .information-text {
+    display: flex;
+    align-items: center;
+}
+
+section.filters .information-text .information-icon {
+    padding: 5px 10px;
+    border: 1px #d9d9d9 solid;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+
+section.filters .information-text span {
+    padding: 0 20px;
+}
+
+/* --------Filters-------- */
+
+/* --------Search results-------- */
+
+section.search-results {
+    margin: 35px 50px;
+    height: 626px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+section.search-results .container {
+    height: 100%;
+    padding: 40px;
+}
+
+section.search-results .container .title p {
+    font-size: 1.375em;
+    font-weight: 700;
+}
+
+/* Popular section */
+section.search-results .popular {
+    background-color: #f2f2f2;
+    width: 32.34%;
+    border-radius: 20px;
+}
+
+section.search-results .popular .container .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.search-results .popular .container .title .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.search-results .popular .container .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0;
+    height: 100%;
+}
+
+section.search-results .popular .container .cards .card-1,
+section.search-results .popular .container .cards .card-2,
+section.search-results .popular .container .cards .card-3 {
+    display: flex;
+    width: 100%;
+    height: 144px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px #d9d9d9;
+    padding: 5px;
+    cursor: pointer;
+}
+
+section.search-results .popular .container .cards .card-1 .illustration,
+section.search-results .popular .container .cards .card-2 .illustration,
+section.search-results .popular .container .cards .card-3 .illustration {
+    width: 35%;
+}
+
+section.search-results .popular .container .cards .card-1 .illustration img.desk-img-card1,
+section.search-results .popular .container .cards .card-2 .illustration img.desk-img-card2,
+section.search-results .popular .container .cards .card-3 .illustration img.desk-img-card3 {
+    height: 134px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+section.search-results .popular .container .cards .card-1 .description,
+section.search-results .popular .container .cards .card-2 .description,
+section.search-results .popular .container .cards .card-3 .description {
+    padding: 3% 5%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.search-results .popular .container .cards .card-1 .description .text .title p,
+section.search-results .popular .container .cards .card-2 .description .text .title p,
+section.search-results .popular .container .cards .card-3 .description .text .title p {
+    font-size: 1em;
+    width: 90%;
+    padding: 2% 0;
+}
+
+section.search-results .popular .container .cards .card-1 .description .text .price p,
+section.search-results .popular .container .cards .card-2 .description .text .price p,
+section.search-results .popular .container .cards .card-3 .description .text .price p {
+    font-size: 0.9em;
+    width: 90%;
+    padding: 2% 0;
+}
+
+/* Popular section */
+
+/* City results section */
+section.search-results .city-results {
+    background-color: #f2f2f2;
+    width: 64.66%;
+    border-radius: 20px;
+}
+
+section.search-results .city-results .container .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 440px;
+    padding: 25px 0;
+    box-sizing: content-box;
+}
+
+section.search-results .city-results .container .cards .card-1,
+section.search-results .city-results .container .cards .card-2,
+section.search-results .city-results .container .cards .card-3,
+section.search-results .city-results .container .cards .card-4,
+section.search-results .city-results .container .cards .card-5,
+section.search-results .city-results .container .cards .card-6 {
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px #d9d9d9;
+    padding: 5px;
+    cursor: pointer;
+}
+
+section.search-results .city-results .container .cards .card-1 .illustration,
+section.search-results .city-results .container .cards .card-2 .illustration,
+section.search-results .city-results .container .cards .card-3 .illustration,
+section.search-results .city-results .container .cards .card-4 .illustration,
+section.search-results .city-results .container .cards .card-5 .illustration,
+section.search-results .city-results .container .cards .card-6 .illustration {
+    width: 100%;
+}
+
+section.search-results .city-results .container .cards .card-1 .illustration img.desk-img-card1,
+section.search-results .city-results .container .cards .card-2 .illustration img.desk-img-card2,
+section.search-results .city-results .container .cards .card-3 .illustration img.desk-img-card3,
+section.search-results .city-results .container .cards .card-4 .illustration img.desk-img-card4,
+section.search-results .city-results .container .cards .card-5 .illustration img.desk-img-card5,
+section.search-results .city-results .container .cards .card-6 .illustration img.desk-img-card6 {
+    height: 115px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+section.search-results .city-results .container .cards .card-1 .description,
+section.search-results .city-results .container .cards .card-2 .description,
+section.search-results .city-results .container .cards .card-3 .description,
+section.search-results .city-results .container .cards .card-4 .description,
+section.search-results .city-results .container .cards .card-5 .description,
+section.search-results .city-results .container .cards .card-6 .description {
+    padding: 3% 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.search-results .city-results .container .cards .card-1 .description .text .title p,
+section.search-results .city-results .container .cards .card-2 .description .text .title p,
+section.search-results .city-results .container .cards .card-3 .description .text .title p,
+section.search-results .city-results .container .cards .card-4 .description .text .title p,
+section.search-results .city-results .container .cards .card-5 .description .text .title p,
+section.search-results .city-results .container .cards .card-6 .description .text .title p {
+    font-size: 1em;
+    width: 90%;
+}
+
+section.search-results .city-results .container .cards .card-1 .description .text .price p,
+section.search-results .city-results .container .cards .card-2 .description .text .price p,
+section.search-results .city-results .container .cards .card-3 .description .text .price p,
+section.search-results .city-results .container .cards .card-4 .description .text .price p,
+section.search-results .city-results .container .cards .card-5 .description .text .price p,
+section.search-results .city-results .container .cards .card-6 .description .text .price p {
+    font-size: 0.9em;
+    width: 90%;
+    padding-top: 2%;
+}
+
+section.search-results .city-results .container .more {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+section.search-results .city-results .container .more a {
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+/* City results section */
+
+/* --------Search results-------- */
+
+/* --------Activity section -------- */
+
+section.activity {
+    margin: 0 50px;
+    padding: 35px 0;
+    height: 600px;
+}
+
+section.activity .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.activity .container .title {
+    height: 55px;
+    width: 100%;
+}
+
+section.activity .container .title {
+    font-size: 1.375em;
+    font-weight: 700;
+}
+
+section.activity .container .cards {
+    height: 445px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.activity .container .cards .sec1,
+section.activity .container .cards .sec2 {
+    height: 100%;
+    width: 48.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.activity .container .cards .sec1 .bigger,
+section.activity .container .cards .sec1 .smaller,
+section.activity .container .cards .sec2 .bigger,
+section.activity .container .cards .sec2 .smaller {
+    height: 100%;
+    width: 46.5%;
+}
+
+section.activity .container .cards .sec1 .smaller,
+section.activity .container .cards .sec2 .smaller {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.activity .container .cards .sec1 .bigger .card-1,
+section.activity .container .cards .sec2 .bigger .card-1 {
+    height: 100%;
+    width: 100%;
+}
+
+section.activity .container .cards .sec1 .smaller .card-2 {
+    height: 236px;
+    width: 100%;
+}
+
+section.activity .container .cards .sec1 .smaller .card-3 {
+    height: 165px;
+    width: 100%;
+}
+
+section.activity .container .cards .sec2 .smaller .card-2 {
+    height: 195px;
+    width: 100%;
+}
+
+section.activity .container .cards .sec2 .smaller .card-3 {
+    height: 206px;
+    width: 100%;
+}
+
+section.activity .container .cards .sec1 .bigger .card-1,
+section.activity .container .cards .sec1 .smaller .card-2,
+section.activity .container .cards .sec1 .smaller .card-3,
+section.activity .container .cards .sec2 .bigger .card-1,
+section.activity .container .cards .sec2 .smaller .card-2,
+section.activity .container .cards .sec2 .smaller .card-3 {
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px #d9d9d9;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    transition: 0.3s ease-in-out;
+}
+
+section.activity .container .cards .sec1 .bigger .card-1 .title-card,
+section.activity .container .cards .sec1 .smaller .card-2 .title-card,
+section.activity .container .cards .sec1 .smaller .card-3 .title-card,
+section.activity .container .cards .sec2 .bigger .card-1 .title-card,
+section.activity .container .cards .sec2 .smaller .card-2 .title-card,
+section.activity .container .cards .sec2 .smaller .card-3 .title-card {
+    height: 55px;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+}
+
+section.activity .container .cards .sec1 .bigger .card-1 .title-card h1,
+section.activity .container .cards .sec1 .smaller .card-2 .title-card h1,
+section.activity .container .cards .sec1 .smaller .card-3 .title-card h1,
+section.activity .container .cards .sec2 .bigger .card-1 .title-card h1,
+section.activity .container .cards .sec2 .smaller .card-2 .title-card h1,
+section.activity .container .cards .sec2 .smaller .card-3 .title-card h1 {
+    font-weight: 700;
+    font-size: 0.95em;
+}
+
+section.activity .container .cards .sec1 .bigger .card-1 .illustration,
+section.activity .container .cards .sec2 .bigger .card-1 .illustration {
+    height: 390px;
+}
+
+section.activity .container .cards .sec1 .smaller .card-2 .illustration {
+    height: 181px;
+}
+
+section.activity .container .cards .sec1 .smaller .card-3 .illustration {
+    height: 110px;
+}
+
+section.activity .container .cards .sec2 .smaller .card-2 .illustration {
+    height: 140px;
+}
+
+section.activity .container .cards .sec2 .smaller .card-3 .illustration {
+    height: 151px;
+}
+
+section.activity .container .cards .sec1 .bigger .card-1 .illustration .desk-img-sec1-card1,
+section.activity .container .cards .sec1 .smaller .card-2 .illustration .desk-img-sec1-card2,
+section.activity .container .cards .sec1 .smaller .card-3 .illustration .desk-img-sec1-card3,
+section.activity .container .cards .sec2 .bigger .card-1 .illustration .desk-img-sec2-card1,
+section.activity .container .cards .sec2 .smaller .card-2 .illustration .desk-img-sec2-card2,
+section.activity .container .cards .sec2 .smaller .card-3 .illustration .desk-img-sec2-card3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+/* --------Activity section -------- */
+
+/* --------Footer-------- */
+footer.footer {
+    height: 220px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+footer.footer .container {
+    height: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer.footer .container .col1,
+footer.footer .container .col2,
+footer.footer .container .col3 {
+    width: 33.3%;
+    height: 115px;
+}
+
+footer.footer .container .title {
+    height: 40px;
+}
+
+footer.footer .container .title h1 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+footer.footer .container .content {
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer.footer .container .content .row {
+    height: 33%;
+}
+
+footer.footer .container .content .row a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* --------Footer-------- */
