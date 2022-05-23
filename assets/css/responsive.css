@@ -336,19 +336,3 @@
     }
 }
 /* Responsive mobiles */
-
-/* section.activity .container .cards .desk-img-card1 {
-    transition: 0.3s ease-in-out;
-}
-
-section.activity .container .cards .description {
-    transition: 0.3s ease-in-out;
-}
-
-section.activity .container .cards .sec1 .bigger .card-1:hover .desk-img-card1 {
-    filter: brightness(60%);
-}
-
-section.activity .container .cards .sec1 .bigger .card-1:hover .description {
-    height: 30%;
-} */
