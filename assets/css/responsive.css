@@ -6,6 +6,11 @@
         margin: auto;
     }
 
+    nav.nav-bar .navigation .select-1 span,
+    nav.nav-bar .navigation .select-2 span {
+        transition: all 0.3s ease;
+    }
+
     nav.nav-bar .navigation .select-1:hover,
     nav.nav-bar .navigation .select-2:hover {
         color: #0065fc;
@@ -331,8 +336,359 @@
 
 /* Responsive mobiles */
 @media screen and (max-width: 767px) {
-    * {
+    /* --------Head-------- */
+
+    header {
+        margin: 0;
+        height: auto;
+    }
+    /* navbar */
+    nav.nav-bar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav.nav-bar .logo {
+        margin: 30px 0 45px 0;
+        display: block;
+    }
+
+    nav.nav-bar .logo a .logo-desktop {
         display: none;
     }
+
+    nav.nav-bar .logo a .logo-mobile {
+        display: block;
+        width: 115px;
+    }
+
+    nav.nav-bar .navigation {
+        width: 100%;
+        height: 45px;
+    }
+
+    nav.nav-bar .navigation .select-1,
+    nav.nav-bar .navigation .select-2 {
+        padding-top: 3px;
+        width: 50%;
+        align-items: flex-start;
+        font-size: 1.2em;
+        border-bottom: 4px #f2f2f2 solid;
+    }
+
+    nav.nav-bar .navigation .select-1:active,
+    nav.nav-bar .navigation .select-2:active {
+        color: #0065fc;
+        border-bottom: 4px #0065fc solid;
+    }
+    /* navbar */
+
+    /* title */
+    header .headtitle {
+        height: auto;
+        margin: 40px 6% 0 6%;
+        justify-content: flex-start;
+    }
+
+    header .headtitle .title {
+        line-height: 1.3;
+    }
+
+    header .headtitle .subtitle {
+        margin-top: 15px;
+    }
+    /* title */
+
+    /* --------Head-------- */
+
+    /* --------Filters-------- */
+
+    section.filters {
+        margin: 40px 6%;
+        height: auto;
+    }
+
+    /* Search bar */
+
+    #text-search-bar {
+        width: 100%;
+    }
+
+    #text-search-bar i {
+        font-size: large;
+    }
+
+    #text-search-bar .localisation {
+        width: 65px;
+    }
+
+    #text-search-bar input::placeholder {
+        font-size: 1.2em;
+    }
+
+    #text-search-bar input {
+        width: 100%;
+    }
+
+    #text-search-bar .search-desktop {
+        display: none;
+    }
+
+    #text-search-bar .search-phone {
+        display: inline;
+        width: 65px;
+    }
+
+    /* Search bar */
+
+    /* filters list */
+
+    section.filters .filters-list .title {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    section.filters .filters-list {
+        flex-direction: column;
+        margin: 40px 0 25px 0;
+    }
+
+    section.filters .filters-list .all-filters {
+        flex-wrap: wrap;
+    }
+
+    section.filters .filters-list .all-filters .filter1,
+    section.filters .filters-list .all-filters .filter2,
+    section.filters .filters-list .all-filters .filter3 {
+        margin-right: 3%;
+    }
+
+    section.filters .filters-list .all-filters .filter1,
+    section.filters .filters-list .all-filters .filter2,
+    section.filters .filters-list .all-filters .filter3,
+    section.filters .filters-list .all-filters .filter4 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    /* filters list */
+
+    /* --------Filters-------- */
+
+    /* --------Search results-------- */
+
+    section.search-results {
+        margin: 0;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    section.search-results .container {
+        padding: 40px 6%;
+    }
+
+    /* Popular section */
+
+    section.search-results .popular {
+        background-color: #f2f2f2;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    section.search-results .popular .container .cards {
+        padding: 15px 0;
+        height: auto;
+    }
+
+    section.search-results .popular .container .cards .card-1,
+    section.search-results .popular .container .cards .card-2,
+    section.search-results .popular .container .cards .card-3 {
+        margin: 15px 0;
+    }
+
+    /* Popular section */
+
+    /* City results section */
+
+    section.search-results .city-results {
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    section.search-results .city-results .container .cards {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding: 15px 0;
+        height: auto;
+    }
+
+    section.search-results .city-results .container .cards .card-1,
+    section.search-results .city-results .container .cards .card-2,
+    section.search-results .city-results .container .cards .card-3,
+    section.search-results .city-results .container .cards .card-4,
+    section.search-results .city-results .container .cards .card-5,
+    section.search-results .city-results .container .cards .card-6 {
+        width: 100%;
+        height: 215px;
+        margin: 15px 0;
+        box-shadow: 0 4px 20px #d9d9d9;
+    }
+
+    section.search-results .city-results .container .cards .card-1 .illustration img.desk-img-card1,
+    section.search-results .city-results .container .cards .card-2 .illustration img.desk-img-card2,
+    section.search-results .city-results .container .cards .card-3 .illustration img.desk-img-card3,
+    section.search-results .city-results .container .cards .card-4 .illustration img.desk-img-card4,
+    section.search-results .city-results .container .cards .card-5 .illustration img.desk-img-card5,
+    section.search-results .city-results .container .cards .card-6 .illustration img.desk-img-card6 {
+        height: 135px;
+    }
+
+    section.search-results .city-results .container .cards .card-1 .description,
+    section.search-results .city-results .container .cards .card-2 .description,
+    section.search-results .city-results .container .cards .card-3 .description,
+    section.search-results .city-results .container .cards .card-4 .description,
+    section.search-results .city-results .container .cards .card-5 .description,
+    section.search-results .city-results .container .cards .card-6 .description {
+        padding: 3px 5%;
+    }
+
+    section.search-results .city-results .container .cards .card-1 .description .text .title p,
+    section.search-results .city-results .container .cards .card-2 .description .text .title p,
+    section.search-results .city-results .container .cards .card-3 .description .text .title p,
+    section.search-results .city-results .container .cards .card-4 .description .text .title p,
+    section.search-results .city-results .container .cards .card-5 .description .text .title p,
+    section.search-results .city-results .container .cards .card-6 .description .text .title p {
+        padding-top: 2px;
+    }
+
+    section.search-results .city-results .container .cards .card-1 .description .text .price p,
+    section.search-results .city-results .container .cards .card-2 .description .text .price p,
+    section.search-results .city-results .container .cards .card-3 .description .text .price p,
+    section.search-results .city-results .container .cards .card-4 .description .text .price p,
+    section.search-results .city-results .container .cards .card-5 .description .text .price p,
+    section.search-results .city-results .container .cards .card-6 .description .text .price p {
+        padding-top: 7px;
+    }
+
+    /* City results section */
+
+    /* --------Search results-------- */
+
+    /* --------Activity section -------- */
+
+    section.activity {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    section.activity .container {
+        padding: 40px 6%;
+        height: auto;
+    }
+
+    section.activity .container .cards {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    section.activity .container .cards .sec1,
+    section.activity .container .cards .sec2 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    section.activity .container .cards .sec1 .bigger,
+    section.activity .container .cards .sec1 .smaller,
+    section.activity .container .cards .sec2 .bigger,
+    section.activity .container .cards .sec2 .smaller {
+        width: 100%;
+    }
+
+    section.activity .container .cards .sec1 .smaller,
+    section.activity .container .cards .sec2 .smaller {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    section.activity .container .cards .sec1 .bigger .card-1,
+    section.activity .container .cards .sec1 .smaller .card-2,
+    section.activity .container .cards .sec1 .smaller .card-3,
+    section.activity .container .cards .sec2 .bigger .card-1,
+    section.activity .container .cards .sec2 .smaller .card-2,
+    section.activity .container .cards .sec2 .smaller .card-3 {
+        box-shadow: 0 4px 20px #d9d9d9;
+        height: 215px;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    section.activity .container .cards .sec1 .bigger .card-1 .title-card,
+    section.activity .container .cards .sec1 .smaller .card-2 .title-card,
+    section.activity .container .cards .sec1 .smaller .card-3 .title-card,
+    section.activity .container .cards .sec2 .bigger .card-1 .title-card,
+    section.activity .container .cards .sec2 .smaller .card-2 .title-card,
+    section.activity .container .cards .sec2 .smaller .card-3 .title-card {
+        height: 55px;
+    }
+
+    section.activity .container .cards .sec1 .bigger .card-1 .illustration,
+    section.activity .container .cards .sec1 .smaller .card-2 .illustration,
+    section.activity .container .cards .sec1 .smaller .card-3 .illustration,
+    section.activity .container .cards .sec2 .bigger .card-1 .illustration,
+    section.activity .container .cards .sec2 .smaller .card-2 .illustration,
+    section.activity .container .cards .sec2 .smaller .card-3 .illustration {
+        height: 160px;
+    }
+
+    /* --------Activity section -------- */
+
+    /* --------Footer-------- */
+
+    footer.footer {
+        height: auto;
+    }
+
+    footer.footer .container {
+        height: 100%;
+        padding: 40px 6%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer.footer .container .col1,
+    footer.footer .container .col2,
+    footer.footer .container .col3 {
+        margin: 15px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    footer.footer .container .content {
+        height: auto;
+    }
+
+    footer.footer .container .content .row {
+        height: auto;
+        margin: 7px 0;
+    }
+
+    footer.footer .container .title h1 {
+        font-size: 1.3em;
+    }
+
+    footer.footer .container .content .row a {
+        font-size: 1.1em;
+    }
+
+    /* --------Footer-------- */
 }
 /* Responsive mobiles */
