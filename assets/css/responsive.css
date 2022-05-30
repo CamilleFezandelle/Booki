@@ -6,6 +6,8 @@
         margin: auto;
     }
 
+    /* nav bar animation */
+
     nav.nav-bar .navigation .select-1 span,
     nav.nav-bar .navigation .select-2 span {
         transition: all 0.3s ease;
@@ -17,6 +19,8 @@
         border-top: 2px #0065fc solid;
     }
 
+    /* search-bar */
+
     #text-search-bar .search-desktop {
         display: inline;
     }
@@ -24,6 +28,8 @@
     #text-search-bar .search-phone {
         display: none;
     }
+
+    /* filters animation */
 
     section.filters .filters-list .all-filters .filter1,
     section.filters .filters-list .all-filters .filter2,
@@ -38,6 +44,8 @@
     section.filters .filters-list .all-filters .filter4:hover {
         transform: scale(1.1);
     }
+
+    /* search results cards animation */
 
     section.search-results .city-results .container .cards .card-1,
     section.search-results .city-results .container .cards .card-2,
@@ -63,6 +71,8 @@
         transform: scale(1.1);
     }
 
+    /* activities cards animation */
+
     section.activity .container .cards .sec1 .bigger .card-1:hover,
     section.activity .container .cards .sec1 .smaller .card-2:hover,
     section.activity .container .cards .sec1 .smaller .card-3:hover,
@@ -83,10 +93,14 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1150px) {
+    /* search results cards font size  */
+
     section.search-results .container .title p {
         font-size: 1.1em;
         font-weight: 700;
     }
+
+    /* activities cards font size  */
 
     section.activity .container .cards .sec1 .bigger .card-1 .title-card h1,
     section.activity .container .cards .sec1 .smaller .card-2 .title-card h1,
@@ -99,6 +113,8 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1444px) {
+    /* search results cards font size  */
+
     section.search-results .popular .container .cards .card-1 .description .text .title p,
     section.search-results .popular .container .cards .card-2 .description .text .title p,
     section.search-results .popular .container .cards .card-3 .description .text .title p,
@@ -129,12 +145,16 @@
         padding: 7% 5%;
     }
 
+    /* search results cards stars size  */
+
     section.search-results .city-results .container .cards .blue,
     section.search-results .city-results .container .cards .grey,
     section.search-results .popular .container .cards .blue,
     section.search-results .popular .container .cards .grey {
         font-size: small;
     }
+
+    /* activities cards padding  */
 
     section.activity .container .cards .sec1 .bigger .card-1 .title-card,
     section.activity .container .cards .sec1 .smaller .card-2 .title-card,
@@ -151,6 +171,8 @@
 
 /* Responsive tablettes */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* --------Header-------- */
+
     nav.nav-bar .navigation .select-1:active,
     nav.nav-bar .navigation .select-2:active {
         color: #0065fc;
@@ -162,9 +184,15 @@
         text-align: center;
     }
 
+    /* --------Header-------- */
+
+    /* --------Filters-------- */
+
     section.filters {
         margin: 0 18px;
     }
+
+    /* search-bar */
 
     #text-search-bar {
         justify-content: center;
@@ -177,6 +205,8 @@
     #text-search-bar .search-phone {
         display: none;
     }
+
+    /* filters list */
 
     section.filters .filters-list {
         flex-direction: column;
@@ -198,9 +228,15 @@
         margin: 0 10px 0 5px;
     }
 
+    /* information text */
+
     section.filters .information-text {
         justify-content: center;
     }
+
+    /* --------Filters-------- */
+
+    /* --------Search results-------- */
 
     section.search-results {
         flex-direction: column;
@@ -303,6 +339,10 @@
         font-size: small;
     }
 
+    /* --------Search results-------- */
+
+    /* --------Activity-------- */
+
     section.activity {
         height: 1089px;
     }
@@ -318,6 +358,10 @@
         width: 100%;
     }
 
+    /* --------Activity-------- */
+
+    /* --------Footer-------- */
+
     footer.footer .container .col1,
     footer.footer .container .col2,
     footer.footer .container .col3 {
@@ -329,6 +373,8 @@
         display: flex;
         justify-content: flex-end;
     }
+
+    /* --------Footer-------- */
 }
 /* Responsive tablettes */
 
@@ -336,7 +382,7 @@
 
 /* Responsive mobiles */
 @media screen and (max-width: 767px) {
-    /* --------Head-------- */
+    /* --------Header-------- */
 
     header {
         margin: 0;
@@ -382,9 +428,9 @@
         color: #0065fc;
         border-bottom: 4px #0065fc solid;
     }
-    /* navbar */
 
     /* title */
+
     header .headtitle {
         height: auto;
         margin: 40px 6% 0 6%;
@@ -398,9 +444,8 @@
     header .headtitle .subtitle {
         margin-top: 15px;
     }
-    /* title */
 
-    /* --------Head-------- */
+    /* --------Header-------- */
 
     /* --------Filters-------- */
 
@@ -440,8 +485,6 @@
         width: 65px;
     }
 
-    /* Search bar */
-
     /* filters list */
 
     section.filters .filters-list .title {
@@ -471,8 +514,6 @@
         margin-top: 8px;
         margin-bottom: 8px;
     }
-
-    /* filters list */
 
     /* --------Filters-------- */
 
@@ -507,8 +548,6 @@
     section.search-results .popular .container .cards .card-3 {
         margin: 15px 0;
     }
-
-    /* Popular section */
 
     /* City results section */
 
@@ -573,8 +612,6 @@
     section.search-results .city-results .container .cards .card-6 .description .text .price p {
         padding-top: 7px;
     }
-
-    /* City results section */
 
     /* --------Search results-------- */
 
@@ -690,5 +727,13 @@
     }
 
     /* --------Footer-------- */
+}
+
+@media screen and (max-width: 300px) {
+    /* adaptation petits écrans */
+
+    body {
+        width: max-content;
+    }
 }
 /* Responsive mobiles */

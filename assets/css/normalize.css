@@ -9,7 +9,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    line-height: 1.15; /* 1 */
+    line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -329,6 +329,7 @@ section.search-results .popular .container .cards .card-3 {
     box-shadow: 0 4px 10px #d9d9d9;
     padding: 5px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 section.search-results .popular .container .cards .card-1 .illustration,
@@ -371,8 +372,6 @@ section.search-results .popular .container .cards .card-3 .description .text .pr
     width: 90%;
     padding: 2% 0;
 }
-
-/* Popular section */
 
 /* City results section */
 section.search-results .city-results {
@@ -476,7 +475,6 @@ section.search-results .city-results .container .more a {
     color: #000000;
     text-decoration: none;
 }
-/* City results section */
 
 /* --------Search results-------- */
 
@@ -591,12 +589,12 @@ section.activity .container .cards .sec2 .smaller .card-3 .title-card {
     align-items: center;
 }
 
-section.activity .container .cards .sec1 .bigger .card-1 .title-card h1,
-section.activity .container .cards .sec1 .smaller .card-2 .title-card h1,
-section.activity .container .cards .sec1 .smaller .card-3 .title-card h1,
-section.activity .container .cards .sec2 .bigger .card-1 .title-card h1,
-section.activity .container .cards .sec2 .smaller .card-2 .title-card h1,
-section.activity .container .cards .sec2 .smaller .card-3 .title-card h1 {
+section.activity .container .cards .sec1 .bigger .card-1 .title-card h2,
+section.activity .container .cards .sec1 .smaller .card-2 .title-card h2,
+section.activity .container .cards .sec1 .smaller .card-3 .title-card h2,
+section.activity .container .cards .sec2 .bigger .card-1 .title-card h2,
+section.activity .container .cards .sec2 .smaller .card-2 .title-card h2,
+section.activity .container .cards .sec2 .smaller .card-3 .title-card h2 {
     font-weight: 700;
     font-size: 0.95em;
 }
